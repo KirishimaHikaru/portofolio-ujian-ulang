@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MAMAN - Collaboration</title>
+   <link rel="stylesheet" href="style/reset.css">
+   <link rel="stylesheet" href="style/collaboration.css">
+</head>
+
+<body>
+   <header>
+      <span>
+         <the-logo>
+            <img src="src/img/maman.png" alt="logo-aulita">
+            <div>
+               <h3>MAMAN</h3>
+               <p>Salman Abdurrohman Al Fathin</p>
+            </div>
+         </the-logo>
+         <nav>
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#press">ACHIEVEMENTS</a>
+            <a href="index.html#footer">CONTACT</a>
+            <a href="collaboration.html">COLLAB</a>
+         </nav>
+      </span>
+      <hr>
+   </header>
+         
+   <main>
+      <ut-ama id="collaboration">
+         <div class="containerCollaboration">
+            <h4>FORMULIR KOLABORASI</h4>
+            <form id="formulir" action="server/collaboration.php" method="post">
+               <div class="A">
+                  <label for="nameEvent">Nama Event</label>
+                  <input type="text" name="nameEvent" id="nameEvent">
+               </div>
+               <div class="B">
+                  <label for="dateEvent">Tanggal</label>
+                  <input type="date" name="dateEvent" id="dateEvent">
+               </div>
+               <div class="C">
+                  <label for="eventCategory">Kategori Event</label><br>
+                  <input type="radio" name="eventCategory" id="eventCategoryA" value="Gratis">
+                  <label for="eventCategoryA">Gratis</label>
+                  <input type="radio" name="eventCategory" id="eventCategoryB" value="Berbayar">
+                  <label for="eventCategoryB">Berbayar</label>
+               </div>
+               <div class="D">
+                  <label for="eventForm">Bentuk Event</label>
+                  <select name="eventForm" id="eventForm">
+                        <option value="-">-</option>
+                        <optgroup label="Nature">
+                           <option value="Go Green">Go Green</option>
+                           <option value="Go Clean">Go Clean</option>
+                        </optgroup>
+                        <optgroup label="Social">
+                           <option value="Baksos">Baksos</option>
+                           <option value="Khitan Massal">Khitan Massal</option>
+                        </optgroup>
+                        <optgroup label="Education">
+                           <option value="Mentoring">Mentoring</option>
+                           <option value="Workshop">Workshop</option>
+                        </optgroup>
+                  </select>
+               </div>
+               <div class="E">
+                  <label for="eventDescription">Deskripsi Event</label>
+                  <textarea name="eventDescription" id="eventDescription" rows="5" placeholder="Write description about the event"></textarea>
+               </div>
+               
+               <div id="error-messages"></div> <!-- Error messages will be displayed here -->
+               
+               <input type="submit" name="submit" value="UNDANG!">
+            </form>
+         </div>
+      </ut-ama>
+   </main>
+   <script lang="javascript" src="script/collaboration.js"></script>
+</body>
+</html>

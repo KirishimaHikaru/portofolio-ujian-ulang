@@ -1,0 +1,206 @@
+body{
+	background-color:#4A6B45;
+	color:#CAE6D5;
+	font-family: "Alegreya", serif;
+}
+
+header {
+	width: 100%;
+	background: #013927;
+    color: #ffff;
+}
+header > span{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+the-logo{
+	display: flex;
+}
+the-logo div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+the-logo div h3{
+	font-size: 2rem;
+	margin: 5px 0 5px 0;
+}
+the-logo div p{
+	font-size: 0.8rem;
+}
+the-logo img{
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+	border:#CAE6D5 1px solid;
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+}
+nav a{
+	margin: 0 10px 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 0;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+nav a:hover{
+	color: gray;
+}
+hr{
+	border: 2px solid #ffffff;
+	margin: 0;
+}
+
+/* COllaboration */
+#collaboration{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.containerCollaboration{
+	font-family: "Alegreya", serif;
+	width: 600px;
+	background-color: #013927;
+	box-shadow: 10px 10px 10px 5px  hsl(161, 97%, 11%, 50%) ;
+	border-radius: 10px;
+	padding: 30px 70px;
+   margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+.containerCollaboration h4{
+    font-weight: bold;
+	align-self: center;
+	font-size: 2rem;
+	margin-bottom: 30px;
+}
+form{
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+}
+.A,.B,.D,.E{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.C{
+	margin-bottom: 10px;
+}
+label{
+	margin-bottom: 5px;
+}
+input, select{
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+	height: 1.8rem;
+}
+select option{
+	background-color: hsl(150, 100%, 98%, 50%);
+}
+textarea{
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+}
+input[type='radio']{
+	height: unset;
+}
+input[type='submit']{
+	margin-top: 10px;
+	border: #F5FFFA 1px solid;
+	background-color: #CAE6D5;
+	color: #013927;
+	font-weight: bold;
+}
+input[type='submit']:hover{
+	background-color: hsl(150, 100%, 98%, 50%);
+}
+
+/* PLACEHOLDER */
+::placeholder {
+  color: hsla(144, 37%, 85%, 0.5);
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: hsla(144, 37%, 85%, 0.5);
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+   #collaboration {
+       padding: 10px;
+   }
+
+   .containerCollaboration {
+       width: 90%; /* Adjust the width to fit the smaller screen */
+       padding: 20px; /* Adjust the padding for smaller screens */
+       margin: 20px 0; /* Adjust the margin for better spacing */
+       box-shadow: 5px 5px 5px 2px hsl(161, 97%, 11%, 50%); /* Reduce the shadow intensity */
+   }
+
+   .containerCollaboration h4 {
+       font-size: 1.5rem; /* Adjust the font size */
+       margin-bottom: 20px; /* Adjust the margin bottom */
+   }
+
+   form {
+       font-weight: bold;
+       display: flex;
+       flex-direction: column;
+   }
+   .A, .B, .D, .E, .C {
+       margin-bottom: 10px; /* Maintain consistent margin bottom */
+       flex-direction: column;
+   }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        background-color: hsl(150, 100%, 98%, 50%);
+        color: #013927;
+        border: 0;
+        border-radius: 5px;
+        height: 1.8rem;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    select option {
+        background-color: hsl(150, 100%, 98%, 50%);
+    }
+
+    textarea {
+        background-color: hsl(150, 100%, 98%, 50%);
+        color: #013927;
+        border: 0;
+        border-radius: 5px;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    input[type='radio'] {
+        height: unset;
+    }
+
+    input[type='submit'] {
+        margin-top: 10px;
+        border: #F5FFFA 1px solid;
+        background-color: #CAE6D5;
+        color: #013927;
+        font-weight: bold;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    input[type='submit']:hover {
+        background-color: hsl(150, 100%, 98%, 50%);
+    }
+} 

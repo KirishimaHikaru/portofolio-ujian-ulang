@@ -1,0 +1,259 @@
+body{
+	background-color: #013927;
+	color: #ffff;
+	font-family: "Alegreya", serif;
+}
+
+header {
+	width: 100%;
+	position: fixed; 
+	top: 0;
+	background: #013927;
+}
+header > span{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+the-logo{
+	display: flex;
+}
+the-logo div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+the-logo div h3{
+	font-size: 2rem;
+	margin: 5px 0 5px 0;
+}
+the-logo div p{
+	font-size: 0.8rem;
+}
+the-logo img{
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+	border:#CAE6D5 1px solid;
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+}
+nav a{
+	margin: 0 10px 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 0;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+nav a:hover{
+	color: gray;
+}
+hr{
+	border: 2px solid #ffffff;
+	margin: 0;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+main h1{
+	font-size: 5rem;
+	text-align: center;
+	margin: 40px;
+	padding: 0 60px;
+}
+main a{
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 1rem;
+	padding: 10px 15px;
+	font-family: "Source Sans", sans-serif;
+}
+
+
+about-me{
+	display: flex;
+}
+about-me div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+}
+about-me h2{
+	font-size: 4rem;
+	margin: 30px 0;
+	padding: 0 70px;
+	text-align: center;
+}
+about-me > .about p{
+	color: #CAE6D5;
+	font-family: 'Source Sans', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.3rem;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+about-me h5{
+    font-family: "Source Sans", sans-serif;
+    text-align: justify;
+    letter-spacing: 4px;
+    color: #00BF63;
+}
+about-me img{
+	width:  400px;
+	height: 670px;
+}
+
+press-release{
+	margin: 40px 0;
+}
+press-release .container{
+	display: flex;
+	justify-content: space-around;
+	flex-shrink: 0;
+	font-family: 'Source Sans', sans-serif;
+}
+press-release h2{
+	font-size: 4rem;
+	padding: 30px;
+}
+press-release .container div{
+	border: solid 1px white;
+	width: 285px;
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+}
+press-release h5{
+	font-size: 1.3rem;
+	padding: 10px;
+}
+press-release p{
+	padding: 10px;
+}
+press-release img{
+	width: 260px;
+	height: 155px;
+	align-self: center;
+	padding: 10px;
+}
+
+footer{
+	padding: 30px;
+}
+footer .A img{
+	height: auto;
+	width: 100%;
+	margin-bottom: 50px;
+}
+footer > span{
+	display: flex;
+	justify-content: space-around;
+}
+footer in-fo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+footer in-fo h4{
+	font-size: 2rem;
+	margin: 20px 0;
+}
+footer in-fo p{
+	margin: 20px 0;
+	font-family: 'Source Sans', sans-serif;
+	color: #CAE6D5;
+	letter-spacing: 2px;
+	line-height: 1.2rem;
+}
+footer .C{
+	border: #ffffff 3px solid;
+	display: flex;
+	height: 50%;
+	align-items: center;
+	align-self: self-start;
+	margin-bottom: 60px;
+}
+footer .C h4{
+	margin: 10px 20px 10px 5px;
+}
+footer .C img{
+	width: 40px;
+	height: 40px;
+	margin: 0 10px;
+}
+footer .D{
+	font-size: 1.3rem;
+	font-family: 'Source Sans', sans-serif;
+	padding: 10px;
+	background-color: hsl(144, 36%, 85%, 30%);
+}
+sa-ran{
+	border: 1px white solid;
+	padding: 10px;
+}
+sa-ran > form{
+	display: flex;
+	flex-direction: column;
+}
+sa-ran > form input{
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+	height: 1.8rem;
+	margin: 3px 0;
+}
+sa-ran > form textarea{
+	margin: 3px 0;
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+}
+::placeholder {
+  color: #CAE6D5;
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #CAE6D5;
+}
+.kotaksaran{
+	display: flex;
+	margin: 10px 0;
+}
+.kotaksaran div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.kotaksaran div h3{
+	font-size: 2rem;
+	margin: 5px 0 5px 0;
+}
+.kotaksaran div p{
+	font-size: 0.8rem;
+}
+.kotaksaran img{
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+	border:#CAE6D5 1px solid;
+	border-radius: 50%;
+}
+
+.tumbal{
+	min-height: 103px;
+}

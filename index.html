@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MAMAN - Portofolio</title>
+   <link rel="stylesheet" href="style/reset.css">
+   <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+   <header>
+      <span>
+         <the-logo>
+            <img src="src/img/maman.png" alt="foto-maman">
+            <div>
+               <h3>MAMAN</h3>
+               <p>Salman Abdurrohman Al Fathin</p>
+            </div>
+         </the-logo>
+         <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#press">ACHIEVEMENTS</a>
+            <a href="#footer">CONTACT</a>
+            <a href="collaboration.html">COLLAB</a>
+         </nav>
+      </span>
+      <hr>
+   </header>
+
+   <div class="tumbal" id="home"></div>
+
+   <main>
+      <h1>Salam Kenal, Aku Seorang Pecinta Alam!</h1>
+      <a href="#about">CARI TAU LAGI!</a>
+   </main>
+
+   <div class="tumbal" id="about"></div>
+
+   <about-me>
+      <div class="about">
+         <h2>About Me!</h2>
+         <p>Sebagai seorang pecinta alam, saya menemukan kedamaian dalam keindahan alam yang murni. Setiap langkah di hutan atau mendaki gunung mengingatkan saya akan pentingnya menjaga kelestarian bumi. Saya berkomitmen untuk melindungi lingkungan dan berkontribusi dalam konservasi. Alam adalah sumber inspirasi yang tiada habisnya, dan saya berharap dapat membagikan cinta serta kepedulian ini kepada orang lain.
+         </p>
+         <h5>"Menjaga Alam, Menginspirasi, dan Melestarikan Kehidupan."</h5>
+      </div>
+      <div>
+         <img src="src/img/IMG_20240517_173425.jpg" alt="">
+      </div>
+   </about-me>
+
+   <div class="tumbal" id="press"></div>
+
+   <press-release id="">
+      <h2>Berita Tentangku!</h2>
+      <div class="container">
+         <div class="boxA">
+            <img src="src/img/IMG-(1).jpg" alt="">
+            <h5>Tak Santai: Ini yang Dilakukan Pecinta Alam</h5>
+            <br>
+            <br>
+            <p>NaturePress - Jun 28, 2005</p>
+         </div>
+         <div class="boxB">
+            <img src="src/img/IMG-(2).jpg" alt="">
+            <h5>Dua peneliti ini menemukan solusi untuk Sungai!</h5>
+            <br>
+            <br>
+            <p>Researcher Today - Oct 12, 2016</p>
+         </div>
+         <div class="boxC">
+            <img src="src/img/IMG-(3).jpg" alt="">
+            <h5>Biografi Singkat Seorang Maman</h5>
+            <br>
+            <br>
+            <p>AutoBio - Nov 25, 2019</p>
+         </div>
+         <div class="boxD">
+            <img src="src/img/IMG-(4).jpg" alt="">
+            <h5>Ilmu dan Alam Menurut Maman</h5>
+            <br>
+            <br>
+            <p>JurnalArtikel - Jan 03, 2020</p>
+         </div>
+      </div>
+   </press-release>
+
+   <div class="tumbal" id="footer"></div>
+
+   <footer>
+      <div class="A">
+         <img src="src/img/IMG20240518081123B.jpg" alt="">
+      </div>
+      <span>
+         <in-fo>
+            <div class="B">
+               <h4>Info Kontakku:</h4>
+               <p>
+                  123 Anywhere St. Any City ST 12345<br>
+                  +62-812-3456-7890 <br>
+                  maman@nature.com <br>
+               </p>
+            </div>
+            <div class="C">
+               <h4>Get social</h4>
+               <a href="https://elfatheen.wordpress.com/"><img src="src/icon/wordpress.png" alt=""></a>
+               <a href="https://www.facebook.com/"><img src="src/icon/facebook.png" alt=""></a>
+               <a href="https://www.instagram.com/"><img src="src/icon/instagram.png" alt=""></a>
+            </div>
+            <div class="D">
+               <h5>©Maman 2024. All Rights Reserved</h5>
+            </div>
+         </in-fo>
+         <sa-ran>
+         <div class="kotaksaran">
+            <img src="src/img/maman.png" alt="foto-maman">
+            <div>
+               <h3>JADI LEBIH BAIK!</h3>
+               <p>Kritik dan Saran Untukku:</p>
+            </div>
+         </div>
+            <form name="saranForm" action="server/saran.php" method="post">
+               <input type="text" name="inisial" placeholder="I n i s i a l">
+               <input type="email" name="email" placeholder="E m a i l @mail.com">
+               <textarea rows="3" name="kritik" placeholder="Kritik"></textarea>
+               <textarea rows="3" name="saran" placeholder="Saran"></textarea>
+               <div id="error-messages"></div>
+               <input type="submit" value="Kirim!">
+            </form>
+         </sa-ran>
+      </span>
+   </footer>
+   <script lang="javascript" src="script/saran.js"></script>
+</body>
+</html>
